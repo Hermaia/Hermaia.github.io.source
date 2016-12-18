@@ -2,6 +2,8 @@ desc("build jade to html");
 task("pug", function() {
     jake.exec("pug pug/index.pug --out ../docs/");
     jake.exec("pug pug/about.pug --out ../docs/");
+    jake.exec("pug pug/license.pug --out ../docs/");
+    jake.exec("pug pug/design.pug --out ../docs/");
 //    jake.exec("pug pug/ --out ../docs/");
 });
 

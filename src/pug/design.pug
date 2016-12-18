@@ -1,0 +1,51 @@
+extends ./_layout
+
+
+block header
+  title
+    | Hermaia
+  link(rel= "stylesheet", href= "./design.css")
+
+block content
+
+  div.jumbotron
+    div.container
+      h1
+        | Hermaia
+
+      p.lead
+        | I will be better !!
+
+  .container
+    .row
+      .col-md-12
+        h2.page-header Documents
+
+    .row
+      .col-md-8
+        h3.page-header Japanese
+
+      .col-md-4
+        form
+          div.form-group
+            label(for="exampleInputEmail1") Email address
+            input.form-control#exampleInputEmail1(type="email", placeholder="Email")
+          div.form-group
+            label(for="exampleInputFile") File input
+            input#exampleInputFile(type="file")
+            p.help-block Example block-level help text here.
+          div.checkbox
+            label
+              input(type="checkbox")
+              | Check me out
+          button.btn.btn-default(type="submit") Submit
+
+
+    .row
+      .col-md-12
+        h2.page-header License
+
+
+
+block script
+  script(type="text/javascript" src="/assets/js/index.js")
